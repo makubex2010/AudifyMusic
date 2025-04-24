@@ -14,10 +14,6 @@
 <a href="https://github.com/StormBeatz/AudifyMusic/commits/StormBeatz"> <img src="https://img.shields.io/github/last-commit/StormBeatz/AudifyMusic?color=blue&logo=github&logoColor=green&style=for-the-badge" /></a>
 </p>
 
-<p align="center">
-  <img src="https://i.ibb.co/rfKdhLkR/photo-2025-04-24-14-26-11.jpg">
-</p>
-
 <h3 align="center">
     ─「 ᴅᴇᴩʟᴏʏ ᴏɴ ʜᴇʀᴏᴋᴜ 」─
 </h3>
