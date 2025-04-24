@@ -3,8 +3,8 @@
 </h2>
 
 <p align="center">
-<img src="https://files.catbox.moe/8drqda.jpg">
-</p>
+   <img src="https://files.catbox.moe/8drqda.jpg">
+ </p>
 
 <p align="center">
 <a href="https://github.com/StormBeatz/AudifyMusic/stargazers"><img src="https://img.shields.io/github/stars/StormBeatz/AudifyMusic?color=black&logo=github&logoColor=black&style=for-the-badge" alt="Stars" /></a>
