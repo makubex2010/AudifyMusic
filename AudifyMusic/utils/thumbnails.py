@@ -180,7 +180,7 @@ async def get_thumb(videoid: str):
         draw = ImageDraw.Draw(background)
         arial = ImageFont.truetype("AudifyMusic/assets/font2.ttf", 30)
         font = ImageFont.truetype("AudifyMusic/assets/font.ttf", 30)
-        title_font = ImageFont.truetype("AviaxMusic/assets/font3.ttf", 45)
+        title_font = ImageFont.truetype("AudifyMusic/assets/font3.ttf", 45)
 
 
         circle_thumbnail = crop_center_circle(youtube, 400, 20, start_gradient_color)
