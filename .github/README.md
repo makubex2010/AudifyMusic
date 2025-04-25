@@ -13,9 +13,6 @@ Audify Music 🎧
 <a href="https://www.python.org/"> <img src="https://img.shields.io/badge/Written%20in-Python-orange?style=for-the-badge&logo=python" alt="Python" /> </a>
 <a href="https://github.com/StormBeatz/AudifyMusic/commits/StormBeatz"> <img src="https://img.shields.io/github/last-commit/StormBeatz/AudifyMusic?color=blue&logo=github&logoColor=green&style=for-the-badge" /></a>
 </p>
-<p align="center">
-   <img src="https://i.ibb.co/rfKdhLkR/photo-2025-04-24-14-26-11.jpg">
- </p>
 
 
 <h3 align="center">
