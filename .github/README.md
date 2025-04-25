@@ -18,6 +18,8 @@ Audify Music 🎧
 
 ---
 
+### 🛠 Fix for YouTube Blocking VPS IPs Try Our Cookies Method Below 👇
+
 ## **Using Cookies for Authentication**
 
 ### **Method: Netscape HTTP Cookie File**
@@ -36,21 +38,8 @@ Use a browser extension to export cookies in the **Netscape HTTP Cookie File** f
 
 #### **2. Upload Cookies**
 
-1. Go to cookies folder of Repository**.
-2. Paste your `Netscape HTTP cookies`  in cookies/cookies.txt.
-3. Save the cookies.txt file in cookies/cookies.txt.
-
----
-
-### 🛠 Fix for YouTube Blocking VPS IPs
-
-Due to YouTube blocking VPS IPs drastically, we have implemented a fix. Follow the steps below:
-
-1. **Join our Support Group**: Type `#script` in our [support group](https://t.me/GrayBotSupport) to get the necessary script.
-2. **Run the Script**: Run the downloaded script on your Windows Desktop Through VS Code or any other Software to generate cookies.
-3. **Fork the Repository**: Fork this repository to your GitHub account.
-4. **Add Cookies**: Paste the generated cookies into the `cookies` folder in your forked repository.
-5. **Deploy the Bot**: Continue with the setup instructions as outlined above.
+1. **Add Cookies**: Paste the generated cookies into the `cookies` folder in your forked repository.
+2. **Deploy the Bot**: Continue with the
 
 This process will allow you to bypass the YouTube restrictions and ensure smooth operation of the bot.
 
