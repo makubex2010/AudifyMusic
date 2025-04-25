@@ -174,8 +174,14 @@ Support Group
 
 - [Yukki Music](https://github.com/TeamYukki/YukkiMusicBot) & [AviaxMusic](https://github.com/CyberPixelPro/AviaxMusic) & [AnonXMusic](https://github.com/AnonymousX1025/AnonXMusic) For their Source Codes.
 
+---
+
 ## Dev 🚀
 
 - [Nickhil](https://t.me/Nickhiil)
 
-<a href="https://pyrogramy.org"><img src="https://i.ibb.co/SVLD5k8/Document-1222546317.png" alt="pyrogram" border="0"></a>  
+---
+
+## Bot 🎧
+
+- [Audify Music Bot](https://t.me/AudifyMusicBot)
