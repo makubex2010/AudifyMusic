@@ -90,6 +90,21 @@ To use the API, you need an API key. Follow these steps to obtain one:
 
 ---
 
+### 🛠 Commands & Usage
+
+The Audify Music Bot offers a range of commands to enhance your music listening experience on Telegram:
+
+| Command                 | Description                                 |
+|-------------------------|---------------------------------------------|
+| `/play <song name>`     | Play the requested song.                    |
+| `/pause`                | Pause the currently playing song.           |
+| `/resume`               | Resume the paused song.                     |
+| `/skip`                 | Move to the next song in the queue.         |
+| `/stop`                 | Stop the bot and clear the queue.           |
+| `/queue`                | Display the list of songs in the queue.     |
+
+For a full list of commands, use `/help` in [telegram](https://t.me/AudifyMusicBot).
+
 
 <h3 align="center">
 Deploy 🚀  
@@ -167,6 +182,28 @@ Support Group
 <a href="https://t.me/GrayBots"><img src="https://img.shields.io/badge/Telegram-Updates%20Channel-blue.svg?logo=telegram"></a>  
 <a href="https://t.me/GrayBotSupport"><img src="https://img.shields.io/badge/Telegram-Support%20Group-blue.svg?logo=telegram"></a>
 </p>
+
+---
+
+### 🤝 Contributing
+
+Found a Bug ? 🐛 
+
+We welcome contributions to the Audify Music Bot project. If you'd like to contribute, please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch with a meaningful name.
+3. Make your changes and commit them with a descriptive commit message.
+4. Open a pull request against our `main` branch.
+5. Our team will review your changes and provide feedback.
+
+For more details, reach out us on telegram.
+
+---
+
+### 📜 License
+
+This project is licensed under the MIT License. For more details, see the [LICENSE](LICENSE) file.
 
 ---
 
