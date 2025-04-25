@@ -2,6 +2,8 @@
 Audify Music 🎧
 </h2>
 
+---
+
 <p align="center">
    <img src="https://files.catbox.moe/8drqda.jpg">
  </p>
@@ -13,6 +15,8 @@ Audify Music 🎧
 <a href="https://www.python.org/"> <img src="https://img.shields.io/badge/Written%20in-Python-orange?style=for-the-badge&logo=python" alt="Python" /> </a>
 <a href="https://github.com/StormBeatz/AudifyMusic/commits/StormBeatz"> <img src="https://img.shields.io/github/last-commit/StormBeatz/AudifyMusic?color=blue&logo=github&logoColor=green&style=for-the-badge" /></a>
 </p>
+
+---
 
 ### 🛠 Fix for YouTube Blocking VPS IPs
 
@@ -49,6 +53,8 @@ To use the API, you need an API key. Follow these steps to obtain one:
 - **Audio Only**: The API provides audio streaming only. If you need video play support, you must add cookies as described in the section above.
 - **Support**: If you face any issues with the API or need help with integration, join our [support group](https://t.me/GrayBotSupport) and ask for assistance.
 
+---
+
 ## Features ✨
 
 - 🎵 **Multiple Sources:** Play music from various platforms.
@@ -57,6 +63,8 @@ To use the API, you need an API key. Follow these steps to obtain one:
 - 🎛 **Customizable Settings:** From equalizer to normalization.
 - 📢 **Crystal Clear Audio:** High-quality playback.
 - 🎚 **Volume Mastery:** Adjust to your preferred loudness.
+
+---
 
 
 <h3 align="center">
@@ -70,6 +78,8 @@ Easiest Heroku Deploy 🤭
     <a href="https://heroku.com/deploy?template=https://github.com/StormBeatz/AudifyMusic">  
     <img src="https://github.com/nacbots/broadcastbot/blob/main/herokudeploy-01.svg" alt="herokudeploy-01" border="0" height="90" width="285"></a>  
 </p>  
+
+---
 
 <h3 align="center">
 Host Locally 🤕
@@ -132,6 +142,8 @@ Support Group
 <a href="https://t.me/GrayBots"><img src="https://img.shields.io/badge/Telegram-Updates%20Channel-blue.svg?logo=telegram"></a>  
 <a href="https://t.me/GrayBotSupport"><img src="https://img.shields.io/badge/Telegram-Support%20Group-blue.svg?logo=telegram"></a>
 </p>
+
+---
 
 ## Credits  
 
