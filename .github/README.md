@@ -1,5 +1,5 @@
 <h2 align="center"> 
-    # Audify Music
+Audify Music
 
 - Audify Music is a telegram bot project that's allow you to play music on telegram voice chat group (<3)
 </h2>
@@ -21,7 +21,7 @@
 
 
 <h3 align="center">
-    ## Deploy 🚀  
+Deploy 🚀  
 
 ### Easiest Heroku Deploy 🤭  
 
@@ -31,7 +31,7 @@
 </p>  
 
 <h3 align="center">
-    ### Host Locally 🤕
+Host Locally 🤕
 </h3>
 
 - Get your [Necessary Variables](https://github.com/StormBeatz/AudifyMusic/blob/master/sample.env)
@@ -84,7 +84,7 @@ Press `Ctrl+C` when you're done with editing env and `:wq` to save the env<br>
 ━━━━━━━━━━━━━━━━━━━━
 
 <h3 align="center">
-    ## Support Group
+Support Group
 </h3>
 
 <p align="center">
