@@ -1,5 +1,7 @@
 <h2 align="center"> 
-    ──「 Audify Music 」──
+    # Audify Music
+
+- Audify Music is a telegram bot project that's allow you to play music on telegram voice chat group (<3)
 </h2>
 
 <p align="center">
@@ -19,13 +21,17 @@
 
 
 <h3 align="center">
-    ─「 ᴅᴇᴩʟᴏʏ ᴏɴ ʜᴇʀᴏᴋᴜ 」─
-</h3>
+    ## Deploy 🚀  
 
-<p align="center"><a href="https://dashboard.heroku.com/new?template=https://github.com/StormBeatz/AudifyMusic"> <img src="https://img.shields.io/badge/Deploy%20On%20Heroku-black?style=for-the-badge&logo=heroku" width="220" height="38.45"/></a></p>
+### Easiest Heroku Deploy 🤭  
+
+<p align="center">  
+    <a href="https://heroku.com/deploy?template=https://github.com/StormBeatz/AudifyMusic">  
+    <img src="https://github.com/nacbots/broadcastbot/blob/main/herokudeploy-01.svg" alt="herokudeploy-01" border="0" height="90" width="285"></a>  
+</p>  
 
 <h3 align="center">
-    ─「 ᴅᴇᴩʟᴏʏ ᴏɴ ʟᴏᴄᴀʟ ʜᴏsᴛ/ ᴠᴘs 」─
+    ### Host Locally 🤕
 </h3>
 
 - Get your [Necessary Variables](https://github.com/StormBeatz/AudifyMusic/blob/master/sample.env)
@@ -78,15 +84,17 @@ Press `Ctrl+C` when you're done with editing env and `:wq` to save the env<br>
 ━━━━━━━━━━━━━━━━━━━━
 
 <h3 align="center">
-    ─「 sᴜᴩᴩᴏʀᴛ 」─
+    ## Support Group
 </h3>
 
 <p align="center">
-<a href="https://telegram.me/GrayBotSupport"><img src="https://img.shields.io/badge/-Support%20Group-blue.svg?style=for-the-badge&logo=Telegram"></a>
+<a href="https://t.me/GrayBots"><img src="https://img.shields.io/badge/Telegram-Updates%20Channel-blue.svg?logo=telegram"></a>  
+<a href="https://t.me/GrayBotSupport"><img src="https://img.shields.io/badge/Telegram-Support%20Group-blue.svg?logo=telegram"></a>
 </p>
 
-<p align="center">
-<a href="https://telegram.me/GrayBots"><img src="https://img.shields.io/badge/-Support%20Channel-blue.svg?style=for-the-badge&logo=Telegram"></a>
-</p>
+## Credits  
 
-- <b> _sᴩᴇᴄɪᴀʟ ᴛʜᴀɴᴋs ᴛᴏ [ᴛᴇᴀᴍ ʏᴜᴋᴋɪ](https://github.com/TeamYukki) ғᴏʀ [ʏᴜᴋᴋɪ ᴍᴜsɪᴄ ʙᴏᴛ](https://github.com/TeamYukki/YukkiMusicBot)_ </b> 
+- [Nickhil](https://t.me/Nickhiil)  
+- [Anony](https://t.me/FakeAnony)
+
+<a href="https://pyrogramy.org"><img src="https://i.ibb.co/SVLD5k8/Document-1222546317.png" alt="pyrogram" border="0"></a>  
