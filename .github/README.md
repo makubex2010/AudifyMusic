@@ -192,7 +192,7 @@ For more details, reach out us on telegram.
 
 ### 📜 License
 
-This project is licensed under the MIT License. For more details, see the [LICENSE](LICENSE) file.
+This project is licensed under the MIT License. For more details, see the [LICENSE](https://github.com/StormBeatz/AudifyMusic/blob/main/LICENSE) file.
 
 ---
 
