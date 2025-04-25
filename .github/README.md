@@ -21,9 +21,9 @@ Audify Music 🎧
 <h3 align="center">
 Deploy 🚀  
 
-
-
+<h3 align="center">
 Easiest Heroku Deploy 🤭  
+</h3>
 
 <p align="center">  
     <a href="https://heroku.com/deploy?template=https://github.com/StormBeatz/AudifyMusic">  
