@@ -23,7 +23,7 @@ Audify Music is a telegram bot project that's allow you to play music on telegra
 <h3 align="center">
 Deploy 🚀  
 
-### Easiest Heroku Deploy 🤭  
+Easiest Heroku Deploy 🤭  
 
 <p align="center">  
     <a href="https://heroku.com/deploy?template=https://github.com/StormBeatz/AudifyMusic">  
