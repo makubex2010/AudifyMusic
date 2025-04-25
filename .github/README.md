@@ -1,7 +1,5 @@
 <h2 align="center"> 
-Audify Music
-
-Audify Music is a telegram bot project that's allow you to play music on telegram voice chat group (<3)
+Audify Music 🎧
 </h2>
 
 <p align="center">
@@ -22,6 +20,8 @@ Audify Music is a telegram bot project that's allow you to play music on telegra
 
 <h3 align="center">
 Deploy 🚀  
+
+
 
 Easiest Heroku Deploy 🤭  
 
