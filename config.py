@@ -81,7 +81,6 @@ votemode = {}
 autoclean = []
 confirmer = {}
 
-FAILED = "https://graph.org/file/40581c7048b1ee71209a2-3fc027862ecf64213d.jpg"
 
 START_IMG_URL = getenv(
     "START_IMG_URL", "https://graph.org/file/7a5bdfcf40189ea450ed0-c1fd755b77e93c2d7a.jpg"
