@@ -1,41 +1,15 @@
-import asyncio, httpx, yt_dlp, os
-import glob, re, random, json, requests
-
+import asyncio
+import os
+import re
 from typing import Union
-from pyrogram.types import Message
-from urllib3.util.retry import Retry
-from requests.adapters import HTTPAdapter
-from pyrogram.enums import MessageEntityType
-from concurrent.futures import ThreadPoolExecutor
-from youtubesearchpython.__future__ import VideosSearch, CustomSearch
 
-from AudifyMusic import LOGGER
+import yt_dlp
+from pyrogram.enums import MessageEntityType
+from pyrogram.types import Message
+from youtubesearchpython.__future__ import VideosSearch
+
 from AudifyMusic.utils.database import is_on_off
 from AudifyMusic.utils.formatters import time_to_seconds
-
-
-#=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×[ NO NEED COOKIES ]=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×
-
-def cookie_txt_file():
-    try:
-        folder_path = f"{os.getcwd()}/cookies"
-        filename = f"{os.getcwd()}/cookies/logs.csv"
-        txt_files = glob.glob(os.path.join(folder_path, '*.txt'))
-        if not txt_files:
-            raise FileNotFoundError("No .txt files found in the specified folder.")
-        cookie_txt_file = random.choice(txt_files)
-        with open(filename, 'a') as file:
-            file.write(f'Choosen File : {cookie_txt_file}\n')
-        return f"""cookies/{str(cookie_txt_file).split("/")[-1]}"""
-    except:
-        pass
-        
-#=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×
-
-def time_to_seconds(time):
-    stringt = str(time)
-    return sum(int(x) * 60**i for i, x in enumerate(reversed(stringt.split(":"))))
-
 
 async def shell_cmd(cmd):
     proc = await asyncio.create_subprocess_shell(
@@ -52,20 +26,7 @@ async def shell_cmd(cmd):
     return out.decode("utf-8")
 
 
-
-async def get_stream_url(query, video=False):
-    api_url = "http://188.213.173.141:1470/youtube"
-    api_key = "SANATANIxTECH"
-    
-    async with httpx.AsyncClient(timeout=60) as client:
-        params = {"query": query, "video": video, "api_key": api_key}
-        response = await client.get(api_url, params=params)
-        if response.status_code != 200:
-            return ""
-        info = response.json()
-        return info.get("stream_url")
-
-
+cookies_file = "cookies/cookies.txt"
 
 class YouTubeAPI:
     def __init__(self):
@@ -159,9 +120,21 @@ class YouTubeAPI:
             link = self.base + link
         if "&" in link:
             link = link.split("&")[0]
-            
-        return await get_stream_url(link, True)
-        
+        proc = await asyncio.create_subprocess_exec(
+            "yt-dlp",
+            "--cookies", cookies_file,
+            "-g",
+            "-f",
+            "best[height<=?720][width<=?1280]",
+            f"{link}",
+            stdout=asyncio.subprocess.PIPE,
+            stderr=asyncio.subprocess.PIPE,
+        )
+        stdout, stderr = await proc.communicate()
+        if stdout:
+            return 1, stdout.decode().split("\n")[0]
+        else:
+            return 0, stderr.decode()
 
     async def playlist(self, link, limit, user_id, videoid: Union[bool, str] = None):
         if videoid:
@@ -169,7 +142,7 @@ class YouTubeAPI:
         if "&" in link:
             link = link.split("&")[0]
         playlist = await shell_cmd(
-            f"yt-dlp -i --get-id --flat-playlist --playlist-end {limit} --skip-download {link}"
+            f"yt-dlp --cookies {cookies_file} -i --get-id --flat-playlist --playlist-end {limit} --skip-download {link}"
         )
         try:
             result = playlist.split("\n")
@@ -206,7 +179,7 @@ class YouTubeAPI:
             link = self.base + link
         if "&" in link:
             link = link.split("&")[0]
-        ytdl_opts = {"quiet": True}
+        ytdl_opts = {"quiet": True, "cookiefile": cookies_file}
         ydl = yt_dlp.YoutubeDL(ytdl_opts)
         with ydl:
             formats_available = []
@@ -278,6 +251,7 @@ class YouTubeAPI:
                 "nocheckcertificate": True,
                 "quiet": True,
                 "no_warnings": True,
+                "cookiefile": cookies_file,
             }
             x = yt_dlp.YoutubeDL(ydl_optssx)
             info = x.extract_info(link, False)
@@ -295,6 +269,7 @@ class YouTubeAPI:
                 "nocheckcertificate": True,
                 "quiet": True,
                 "no_warnings": True,
+                "cookiefile": cookies_file,
             }
             x = yt_dlp.YoutubeDL(ydl_optssx)
             info = x.extract_info(link, False)
@@ -316,6 +291,7 @@ class YouTubeAPI:
                 "no_warnings": True,
                 "prefer_ffmpeg": True,
                 "merge_output_format": "mp4",
+                "cookiefile": cookies_file,  # Add cookie file option here
             }
             x = yt_dlp.YoutubeDL(ydl_optssx)
             x.download([link])
@@ -337,6 +313,7 @@ class YouTubeAPI:
                         "preferredquality": "192",
                     }
                 ],
+                "cookiefile": cookies_file,  # Add cookie file option here
             }
             x = yt_dlp.YoutubeDL(ydl_optssx)
             x.download([link])
@@ -350,9 +327,27 @@ class YouTubeAPI:
             fpath = f"downloads/{title}.mp3"
             return fpath
         elif video:
-            downloaded_file = await get_stream_url(link, True)
-            direct = None
+            if await is_on_off(1):
+                direct = True
+                downloaded_file = await loop.run_in_executor(None, video_dl)
+            else:
+                proc = await asyncio.create_subprocess_exec(
+                    "yt-dlp",
+                    "--cookies", cookies_file,
+                    "-g",
+                    "-f",
+                    "best[height<=?720][width<=?1280]",
+                    f"{link}",
+                    stdout=asyncio.subprocess.PIPE,
+                    stderr=asyncio.subprocess.PIPE,
+                )
+                stdout, stderr = await proc.communicate()
+                if stdout:
+                    downloaded_file = stdout.decode().split("\n")[0]
+                    direct = None
+                else:
+                    return
         else:
-            direct = None
-            downloaded_file = await get_stream_url(link, False)
+            direct = True
+            downloaded_file = await loop.run_in_executor(None, audio_dl)
         return downloaded_file, direct
