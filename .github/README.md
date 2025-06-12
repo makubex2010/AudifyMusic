@@ -9,11 +9,11 @@ Audify Music 🎧
  </p>
 
 <p align="center">
-<a href="https://github.com/StormBeatz/AudifyMusic/stargazers"><img src="https://img.shields.io/github/stars/StormBeatz/AudifyMusic?color=black&logo=github&logoColor=black&style=for-the-badge" alt="Stars" /></a>
-<a href="https://github.com/StormBeatz/AudifyMusic/network/members"> <img src="https://img.shields.io/github/forks/StormBeatz/AudifyMusic?color=black&logo=github&logoColor=black&style=for-the-badge" /></a>
-<a href="https://github.com/StormBeatz/AudifyMusic/blob/master/LICENSE"> <img src="https://img.shields.io/badge/License-MIT-blueviolet?style=for-the-badge" alt="License" /> </a>
+<a href="https://github.com/Nikchil/AudifyMusic/stargazers"><img src="https://img.shields.io/github/stars/Nikchil/AudifyMusic?color=black&logo=github&logoColor=black&style=for-the-badge" alt="Stars" /></a>
+<a href="https://github.com/Nikchil/AudifyMusic/network/members"> <img src="https://img.shields.io/github/forks/Nikchil/AudifyMusic?color=black&logo=github&logoColor=black&style=for-the-badge" /></a>
+<a href="https://github.com/Nikchil/AudifyMusic/blob/master/LICENSE"> <img src="https://img.shields.io/badge/License-MIT-blueviolet?style=for-the-badge" alt="License" /> </a>
 <a href="https://www.python.org/"> <img src="https://img.shields.io/badge/Written%20in-Python-orange?style=for-the-badge&logo=python" alt="Python" /> </a>
-<a href="https://github.com/StormBeatz/AudifyMusic/commits/StormBeatz"> <img src="https://img.shields.io/github/last-commit/StormBeatz/AudifyMusic?color=blue&logo=github&logoColor=green&style=for-the-badge" /></a>
+<a href="https://github.com/Nikchil/AudifyMusic/commits/Nikchil"> <img src="https://img.shields.io/github/last-commit/Nikchil/AudifyMusic?color=blue&logo=github&logoColor=green&style=for-the-badge" /></a>
 </p>
 
 ---
@@ -103,7 +103,7 @@ Easiest Heroku Deploy 🤭
 </h3>
 
 <p align="center">  
-    <a href="https://heroku.com/deploy?template=https://github.com/StormBeatz/AudifyMusic">  
+    <a href="https://heroku.com/deploy?template=https://github.com/Nikchil/AudifyMusic">  
     <img src="https://github.com/nacbots/broadcastbot/blob/main/herokudeploy-01.svg" alt="herokudeploy-01" border="0" height="90" width="285"></a>  
 </p>  
 
@@ -113,7 +113,7 @@ Easiest Heroku Deploy 🤭
 Host Locally 🤕
 </h3>
 
-- Get your [Necessary Variables](https://github.com/StormBeatz/AudifyMusic/blob/master/sample.env)
+- Get your [Necessary Variables](https://github.com/Nikchil/AudifyMusic/blob/master/sample.env)
 
 1. Upgrade and Update by :
 ```sh
@@ -133,7 +133,7 @@ Host Locally 🤕
    ```  
 5. Clone the repository by :
 ```sh
-   git clone https://github.com/StormBeatz/AudifyMusic && cd AudifyMusic
+   git clone https://github.com/Nikchil/AudifyMusic && cd AudifyMusic
    ``` 
 6. Install requirements by :
 ```sh
@@ -192,7 +192,7 @@ For more details, reach out us on telegram.
 
 ### 📜 License
 
-This project is licensed under the MIT License. For more details, see the [LICENSE](https://github.com/StormBeatz/AudifyMusic/blob/main/LICENSE) file.
+This project is licensed under the MIT License. For more details, see the [LICENSE](https://github.com/Nikchil/AudifyMusic/blob/main/LICENSE) file.
 
 ---
 
