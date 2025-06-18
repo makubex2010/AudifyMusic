@@ -129,7 +129,7 @@ Host Locally 🤕
    ```
 4. Install Node js by :
 ```sh
-   curl -fssL https://deb.nodesource.com/setup_19.x | sudo -E bash - && sudo apt-get install nodejs -y && npm i -g npm
+   curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash && source ~/.bashrc && nvm install v18
    ```  
 5. Clone the repository by :
 ```sh
