@@ -103,7 +103,7 @@ Easiest Heroku Deploy 🤭
 </h3>
 
 <p align="center">  
-    <a href="https://heroku.com/deploy?template=https://github.com/Nikchil/AudifyMusic">  
+    <a href="https://heroku.com/deploy?template=https://github.com/makubex2010/AudifyMusic">  
     <img src="https://github.com/nacbots/broadcastbot/blob/main/herokudeploy-01.svg" alt="herokudeploy-01" border="0" height="90" width="285"></a>  
 </p>  
 
